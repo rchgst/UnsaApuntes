@@ -1,0 +1,169 @@
+/* ─────────────────────────────────────────────
+   Tokens del MARCO (contenedor, panel, botones, menús)
+
+   Todos derivan de las variables de Obsidian, así que el bloque encaja con CUALQUIER
+   tema —también los de la comunidad— sin que tengamos que mantener una paleta por cada
+   uno. Antes el marco era `#1e1e1e` fijo y no fijaba color de texto: en tema claro la
+   fórmula heredaba `--text-normal` (casi negro) sobre panel casi negro y quedaba
+   ilegible, y el bloque era una isla oscura en mitad de una nota blanca.
+
+   La TINTA del plano (rejilla, ejes, curvas) NO está aquí: es paleta propia en dos
+   versiones, porque necesita contraste garantizado entre capas y ninguna variable de
+   tema lo promete. Ver `src/motor/rendering/paleta.ts`.
+
+   Las dos declaraciones seguidas de los tokens "-activo" son un respaldo deliberado:
+   si `color-mix` no está disponible, queda la primera (plana pero válida).
+   ───────────────────────────────────────────── */
+.lmath-container {
+  --lmath-superficie: var(--background-primary);
+  --lmath-panel: var(--background-secondary);
+  --lmath-borde: var(--background-modifier-border);
+  --lmath-texto: var(--text-normal);
+  --lmath-texto-tenue: var(--text-muted);
+  --lmath-texto-apagado: var(--text-faint);
+  /* Chip flotante (inicio, zoom, ⓘ) y botones de la barra del panel. Se posan SOBRE el
+     plano, cuya superficie es `--background-primary`; usar la secundaria los despega. */
+  --lmath-chip: var(--background-secondary);
+  --lmath-chip-activo: var(--background-secondary);
+  --lmath-chip-activo: color-mix(in srgb, var(--text-normal) 12%, var(--background-secondary));
+  --lmath-borde-activo: var(--background-modifier-border);
+  --lmath-borde-activo: color-mix(in srgb, var(--text-normal) 24%, var(--background-modifier-border));
+  /* Velo de bloque degenerado: atenúa el plano sin fijar color de tema. */
+  --lmath-velo: rgba(0, 0, 0, 0.55);
+  /* Acento ÁMBAR del carril y del ⓘ: es estado del plano, no cromo, así que es nuestro
+     (identidad del plugin) y lleva variante clara, como la tinta. */
+  --lmath-acento: rgba(255, 170, 60, 0.95);
+  --lmath-acento-suave: rgba(255, 200, 130, 0.95);
+  --lmath-acento-borde: rgba(255, 160, 40, 0.5);
+  --lmath-acento-contraste: rgba(20, 20, 20, 0.95);
+  --lmath-sombra: var(--shadow-s, 0 2px 6px rgba(0, 0, 0, 0.35));
+  --lmath-sombra-flotante: var(--shadow-l, 0 4px 12px rgba(0, 0, 0, 0.4));
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* Ancla del panel de la fórmula cuando el bloque es ESTRECHO: ahí el panel sale del flujo
+     (`position:absolute`) y flota sobre el plano, con lo que el plano —que ya pide
+     `width:100%`— se queda la fila entero. Ver `Reparto` en MotorExperimental.ts. */
+  position: relative;
+  background-color: var(--lmath-panel);
+  /* El panel de la fórmula heredaba el color de texto del tema sobre un fondo fijo
+     oscuro. Fijarlo aquí ata las dos mitades del contraste al MISMO par de variables. */
+  color: var(--lmath-texto);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--lmath-borde);
+  min-height: 261px;
+  margin: 16px;
+}
+
+/* Bloque ESTRECHO (teléfono en vertical, panel lateral angosto): el alto lo manda el plano,
+   que lo deriva de su ancho. El mínimo de 261 dejaría una franja de panel vacía por debajo
+   en cuanto el bloque fuese más estrecho que ~318px. */
+.lmath-container.lmath-estrecho {
+  min-height: 0;
+}
+
+/* Sin fórmula a la izquierda no hay nada que separar: ese borde era la costura entre las dos
+   columnas y suelto se lee como una raya pegada al margen. */
+.lmath-container.lmath-estrecho .lmath-grafica {
+  border-left: 0;
+}
+
+.theme-light .lmath-container {
+  --lmath-velo: rgba(255, 255, 255, 0.62);
+  /* Mismo ámbar que la tinta del plano en claro (`paleta.ts`): 5,25:1 sobre blanco, y
+     con texto blanco encima cuando va relleno. */
+  --lmath-acento: #a8560a;
+  --lmath-acento-suave: #a8560a;
+  --lmath-acento-borde: rgba(194, 98, 10, 0.45);
+  --lmath-acento-contraste: #ffffff;
+}
+
+.lmath-container .lmath-latex {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  /* `font-size` fija la base desde la que MathJax escala la fórmula. No lleva
+     !important: una declaración directa sobre el elemento gana a la herencia,
+     y el prefijo `.lmath-container` sube la especificidad por si Obsidian fija
+     un tamaño en un ancestro con selector de una sola clase. */
+  font-size: 24px;
+  /* La fórmula es de solo lectura: mostramos el cursor normal (flecha) en vez
+     del I-beam de texto que el navegador pone por defecto sobre el texto
+     seleccionable de KaTeX. `cursor` se hereda, así que fijarlo aquí cubre todo
+     el árbol de KaTeX y los TRES bloques (obs-graph, obs-system, obs-derivate),
+     que comparten esta clase de panel, más cualquier bloque futuro que la use. */
+  cursor: default;
+}
+
+.lmath-container .lmath-latex .katex {
+  font-size: 1.6em;
+}
+
+/* Obsidian envuelve las matemáticas de bloque ($$…$$) en un elemento con su
+   propio overflow-x:auto + max-width:100%, que mostraba una barra de scroll
+   NATIVA (con flechas) redundante incluso cuando la fórmula cabe de sobra. Se
+   notaba sólo en una ventana de anchos concreta (p.ej. x^{1000}…x^{9999}),
+   justo cuando ese bloque interno desbordaba su propia caja por unos píxeles.
+   El scroll horizontal de la fórmula lo gestiona el contenedor del plugin
+   (overflow controlado por JS + fades + rueda), así que anulamos por completo
+   el overflow propio de Obsidian/MathJax: dejamos que el contenido fluya hasta
+   el contenedor del plugin, que será el único (y sólo si desborda de verdad) en
+   mostrar su barra fina.
+
+   Especificidad: en Live Preview, Obsidian scrollea el mjx-container con
+   `.markdown-source-view.mod-cm6 .math-block > mjx-container` (app.css) →
+   especificidad (0,3,1) = 3 clases + el tipo `mjx-container`. La neutralización
+   con solo `.lmath-container .lmath-latex .MathJax` (0,3,0) EMPATABA en clases
+   pero perdía por ese tipo extra, y la barra nativa reaparecía en fórmulas
+   anchas (p.ej. la tupla paramétrica). Para ganarle SIN `!important` (dispara
+   css/no-important) y SIN usar `mjx-container` como selector de tipo (dispara
+   selector-type-no-unknown de stylelint), la línea del mjx-container lleva una
+   clase extra —`.math-block .MathJax` = (0,4,0), gana por conteo de clases 4>3—.
+   El resto del prefijo (2 clases) basta para las demás capas: Obsidian no les
+   fija overflow propio. */
+.lmath-container .lmath-latex .markdown-rendered,
+.lmath-container .lmath-latex p,
+.lmath-container .lmath-latex .math,
+.lmath-container .lmath-latex .math-block,
+.lmath-container .lmath-latex .katex-display,
+.lmath-container .lmath-latex .math-block .MathJax,
+.lmath-container .lmath-latex .MJX-TEX {
+  overflow: visible;
+  max-width: none;
+  margin: 0;
+}
+
+.lmath-grafica {
+  width: 50%;
+  height: 261px;
+  position: relative;
+  /* Superficie del PLANO. El lienzo ya no rellena su fondo (solo limpia), así que este
+     color es el que se ve tras la rejilla: el plano es del mismo material que la nota y
+     sigue al tema sin repintar. */
+  background-color: var(--lmath-superficie);
+  border-left: 1px solid var(--lmath-borde);
+  overflow: hidden;
+  box-sizing: border-box;
+  /* Fuente Lora SOLO para el texto de la interfaz del plugin (popovers, etiquetas,
+     botones): el plano aloja todos esos overlays DOM. Se acota aquí a propósito para
+     NO tocar el panel LaTeX (.lmath-latex, hermano) ni el resto de Obsidian. El
+     LaTeX de KaTeX conserva su propia fuente aunque estuviera dentro (fija font-family
+     en sus spans). La familia "Lora" la carga host-obsidian/fuentes.ts en runtime;
+     var(--font-interface) es el fallback mientras carga o si falla. */
+  font-family: "Lora", var(--font-interface);
+}
+
+.lmath-info {
+  display: none;
+}
+
+.lmath-aviso {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
