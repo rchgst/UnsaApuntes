@@ -645,7 +645,34 @@ $$
 \text{lo que significa que el conjunto }\mathbb{B} \text{ es linealmente independiente.} 
 \end{matrix}
 $$
-
+$$
+\begin{matrix}
+\gamma_{1}(u+v)+\gamma_{2}(2ku-v)+\gamma_{3}(v+kw) = \odot\\
+(\gamma_{1}u+\gamma_{1}v)+(2k \gamma_{2}u- \gamma_{2}v)+(\gamma_{3}v+k\gamma_{3}w)= \odot \\
+(\gamma_{1}u+2k \gamma_{2}u)+(\gamma_{1}v-\gamma_{2}v+\gamma_{3}v)+(k \gamma_{3}w)= \odot \\
+(\gamma_{1}+2k \gamma_{2})u+ (\gamma_{1}-\gamma_{2}+\gamma_{3})v+(k \gamma_{3})w= \odot \\ \\
+\begin{cases}
+\gamma_{1}+ 2k \gamma_{2}=0 \\
+\gamma_{1}-\gamma_{2}+\gamma_{3}=0 \\
+k \gamma_{3}=0
+\end{cases} \sim \begin{pmatrix}
+1&2k&0 \\
+1&-1&1 \\
+0&0&k
+\end{pmatrix} \\ \\
+\sim \begin{pmatrix}
+1&2k&0 \\
+0&-1-2k&1 \\
+0&0&k
+\end{pmatrix} \sim \begin{cases}
+\gamma_{1}+2k \gamma_{2}=0 \\
+(-1-2k)\gamma_{2}+\gamma_{3}=0 \\
+k \gamma_{3}=0
+\end{cases} \\ \\
+\text{nos queda un sistema de 3 ecuaciones en el cual si }k=0 \text{ el sistema pasaria a tener 2 ecuaciones con 3} \\
+\text{incognitas lo que por teorema me indica que el sistema tiene infinitas soluciones es decir es LD.}
+\end{matrix}
+$$
 ---
 
 ### Ejercicio 13
