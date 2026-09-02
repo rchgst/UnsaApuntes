@@ -604,7 +604,46 @@ Si un conjunto $\mathbb{A} = \{u, v, w\}$ es linealmente independiente, decide, 
 - **b)** ¿Existe, al menos, un valor de $k$ para que $\mathbb{C} = \{u + v, 2ku - v, v + kw\}$ sea linealmente dependiente?
 
 $$
-
+\begin{matrix}
+\text{sabemos que el conjunto }\mathbb{A} \text{ es linealmente independiente o lo que quiere decir:} \\
+\alpha_{1}u+\alpha_{2}v+\alpha_{3}w= \odot \Rightarrow \alpha_{1}=\alpha_{2}=\alpha_{3}=0 \\ \\
+\text{veamos ahora la depndencia lieal de }\mathbb{B}: \\ \\
+\beta_{1} (3u+w) + \beta_{2}(2u-v)+\beta_{3}(v+3w)= \odot \\
+(3\beta_{1}u+\beta_{1}w)+(2\beta_{2}u-\beta_{2}v)+(\beta_{3}v+3\beta_{3}w)= \odot \\
+(3\beta_{1}u+2\beta_{2}u)+(-\beta_{2}v+\beta_{3}v)+(\beta_{1}w+3\beta_{3}w)= \odot \\
+(3\beta_{1}+2\beta_{2})u+(\beta_{3}-\beta_{2})v+(\beta_{1}+3\beta_{3})w= \odot \\ \\
+\text{como }u,v ~~y~~w \text{ son linealmente independiente entonces} \\ \\
+\begin{cases}
+3\beta_{1}+2\beta_{2}=0 \\
+-\beta_{2}+\beta_{3}=0 \\
+\beta_{1}+3\beta_{3}=0
+\end{cases} \sim \begin{pmatrix}
+3&2&0 \\
+0&-1&1 \\
+1&0&1
+\end{pmatrix} \sim \begin{pmatrix}
+3&2&0 \\
+1&0&1 \\
+0&-1&1
+\end{pmatrix} \\ \\
+\sim \begin{pmatrix}
+3&2&0 \\
+0&-2&3 \\
+0&-1&1
+\end{pmatrix} \sim \begin{pmatrix}
+3&2&0 \\
+0&-2&3 \\
+0&0&1
+\end{pmatrix} \sim \begin{cases}
+3\beta_{1}+2\beta_{2}=0 \\
+-2\beta_{2}+3\beta_{3}=0 \\
+\beta_{3}=0
+\end{cases} \\ \\
+\text{como me quedo un sistema escalonado con 3 ecuaciones y 3 incognitas puedo asegurar por teorema} \\
+\text{que el sistema tiene solución única y ademas al ser un sistema homogeneo la soluciónes la trivial} \\
+\text{por ende el existe una unica combinacion de escalares que lo resuelve la cual es } \beta_{1}=\beta_{2}=\beta_{3}=0 \\
+\text{lo que significa que el conjunto }\mathbb{B} \text{ es linealmente independiente.} 
+\end{matrix}
 $$
 
 ---
