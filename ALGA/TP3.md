@@ -29,6 +29,9 @@ a ver para ser mas específicos la suma y el producto deben cumplir unas condici
 
 **Observación:**
 	al referirme yo a un conjunto $\mathbb{V}$ genérico me refiero a que cualquier conjunto ya sea de los reales o complejos o cualquiera que yo pueda inventar que cumpla con esas definiciones ya estoy hablando de un espacio vectorial, cuyos elementos se llaman vectores y el nulo se llama vector nulo. por ejemplo, el cuerpo de las matrices de $M^{n \times m}$ es un espacio vectorial.
+
+
+
 **U.N.Sa. Facultad de Ciencias Exactas**  
 **Asignatura:** Álgebra Lineal y Geometría Analítica  
 **Carreras:** PM, LAS, LF, LER, TEU, TUP, TUES  

@@ -77,6 +77,27 @@ Hallar una raíz aproximada con seis cifras de precisión, calculándola por el 
 ### Ejercicio Nº 3
 Dada la función $f(x) = x - \cos(x)$ definida en $[0, 1]$:
 - **a)** Demuestre que tiene solución única en $[0, 1]$.
+
+para demostrar que existe una única solución utilizaremos 2 teoremas
+
+1. Teorema de Bolzano :
+	$i)\text{ la función debe ser continua en el intervalo cerrado }[0,1]$
+	$ii)~~f(a)f(b)<0$
+
+	es continua pues es una funcion sinuidal compuesta por una lineal y la composición de funciones continua es tambien una función continua.
+
+	$f(0)=-1~~\land ~~ f(1)=0.459697 \Rightarrow f(0)(b)<0$
+
+2. Teorema de Rolle :
+	$ii)\text{ la función debe ser derivable en }(a,b)$
+	$iii)~~~f(x_{1})=f(x_{2})=0$
+
+	es derivable en el intervalo por las mismas condiciones por la que es continua.
+
+	$\text{analizamos la derivada de f: }f'(x)= 1-\sin(x)\text{ al evaluar un punto por ejemplo 0.5}$
+	$\text{podemos ver que es creciente en el intervalo por el cirterio de la primera derivada}$
+	$\text{lo que significa que no hay valor que haga que }f'(x)=0\text{ por lo tanto la raiz es única.}$
+
 - **b)** Determinar el número de iteraciones necesarias para asegurar 4 decimales exactos mediante iteración de punto fijo.
 - **c)** Calcule las 5 primeras iteraciones a partir de $x_0 = 0.5$.
 
@@ -86,6 +107,13 @@ Dada la función $f(x) = x - \cos(x)$ definida en $[0, 1]$:
 **Método de iteración de Punto Fijo:** Elija la función de iteración adecuada, exprese los criterios de convergencia y determine las raíces de las siguientes ecuaciones:
 
 - **i)** $f(x) = x^{2} - \sin(x) - 1 = 0$
+
+| $i$ | $x_{i}=\sqrt{ \sin (x_{i-1})+1 }$ | $\|f(x)\|< \epsilon$ |
+| --- | --------------------------------- | -------------------- |
+| $0$ | $1.5$                             | $0.2525050134$       |
+| $1$ | $1.41332762288972$                | $0.00986756793185$   |
+| $2$ | $1.40983240199$                   | $0.000554147714299$  |
+
 - **ii)** $f(x) = \ln(x) - 1 - \frac{1}{x} = 0$
 - **iii)** $f(x) = x + \frac{1}{x} - e^{x} = 0$
 - **iv)** $f(x) = x^{2} - 5x + 3 = 0$
@@ -96,6 +124,22 @@ Dada la función $f(x) = x - \cos(x)$ definida en $[0, 1]$:
 
 ### Ejercicio Nº 5
 Encontrar la raíz de $f(x) = e^{x} - x^{2} + 1$ con 6 cifras de precisión decimal usando el algoritmo de **Newton** y **Secante**. Obtener conclusiones.
+
+| $i$ | $x_{i+1}=x_{i}- \frac{f(x_{i})}{f'(x_{i})}$ | $f(x_{i})$        | $f(x_{i}-f(x_{i-1}))$ |
+| --- | ------------------------------------------- | ----------------- | --------------------- |
+| *0* | $-1$                                        | $0.3678794411714$ | $-$                   |
+| *1* | $-1.155362403497$                           | $0.0199189037773$ | $0.38779834494888$    |
+| *2* | $-1.1477761807295$                          | $0.0000484651974$ | $0.0198704385799$     |
+| *3* | $-1.1477576321447$                          | $0.0000000002894$ | $0.0199189024879$     |
+
+| $i$ | $x_{i-1}$           | $x_{i}$             | $x_{i+1}$           | $f(x_{i+1})$      |
+| --- | ------------------- | ------------------- | ------------------- | ----------------- |
+| *1* | $-1$                | $-2$                | $-1.1138049236755$  | $0.0877459889409$ |
+| *2* | $-2$                | $-1.1138049236755$  | $-1.1401437442289$  | $0.0198478955371$ |
+| *3* | $-1.1138049236755$  | $-1.1401437442289$  | $-1.14784417757179$ | $0.0002198615727$ |
+| *4* | $-1.1401437442289$  | $-1.14784417757179$ | $-1.1477574195533$  | $0.0000005554723$ |
+| *5* | $-1.14784417757179$ | $-1.1477574195533$  | $-1.1477576321388$  | $0.0000000000155$ |
+| *6* | $-1.1477574195533$  | $-1.1477576321388$  | $-1.1477576321447$  | $0$               |
 
 ---
 
