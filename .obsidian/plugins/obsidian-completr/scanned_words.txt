@@ -79,6 +79,7 @@ MORE
 Matrix
 Milor
 Modificada
+Muestre
 Calendar
 Created
 Cliente
@@ -188,6 +189,9 @@ Cuando
 Calcula
 Cengage
 Comprensivo
+Coordenadas
+Constituyan
+Connect
 Generated
 Gesti
 Google
@@ -247,6 +251,7 @@ Geometr
 Grossman
 GeoGebra
 Gr
+Generen
 with
 week
 wireframes
@@ -594,6 +599,8 @@ style
 solid
 suficientes
 sinuidal
+subconjunto
+simult
 filters
 file
 formulas
@@ -696,6 +703,7 @@ ficos
 funcionamiento
 fijo
 funcion
+finita
 and
 acc
 ageCategory
@@ -853,6 +861,10 @@ aproximada
 adecuada
 aproximar
 acelerar
+anteriores
+afirmaciones
+aplicarlo
+aplique
 hasTag
 high
 hasTimeEstimate
@@ -933,6 +945,7 @@ hablando
 height
 haya
 hipotesis
+hallada
 task
 today
 timeEstimate
@@ -1069,6 +1082,7 @@ trate
 teorema
 tambien
 teoremas
+teor
 priorityWeight
 priority
 priorityCategory
@@ -1244,6 +1258,7 @@ pueda
 puedo
 programas
 primeras
+pertenezca
 if
 isEmpty
 isOverdue
@@ -1380,6 +1395,10 @@ informe
 iteraciones
 iteraci
 iterativo
+iguales
+identidad
+incluidos
+invertible
 none
 normal
 number
@@ -1482,6 +1501,10 @@ ndo
 ndola
 necesaria
 ntas
+ning
+nicas
+neamente
+necesariamente
 low
 list
 length
@@ -1722,6 +1745,16 @@ dependientes
 derivable
 definida
 decimales
+diremos
+dimensi
+decidir
+dicha
+defina
+decida
+dicho
+dateCreated
+dateModified
+deifinici
 overdue
 order
 ocurren
@@ -2021,6 +2054,18 @@ conclusiones
 corresponde
 compuesta
 composici
+centrales
+canonicas
+canonica
+combinacion
+columna
+comprender
+coordenadas
+constituyen
+contenga
+columnas
+completedDate
+consultar
 mtime
 map
 month
@@ -2157,6 +2202,7 @@ mathbb
 mismas
 modificada
 monotona
+muestre
 YYYY
 Yesterday
 YY
@@ -2316,6 +2362,7 @@ Dado
 David
 Definiciones
 Dada
+Dimensi
 recurrence
 reduce
 round
@@ -2457,6 +2504,7 @@ radius
 raiz
 realice
 rmula
+respectiva
 value
 views
 ver
@@ -2728,6 +2776,7 @@ ellos
 expresa
 encuentra
 encontre
+ejemplos
 No
 Not
 None
@@ -2923,6 +2972,7 @@ Objetivos
 OPTIONS
 Observaci
 Obtener
+Oras
 Later
 Long
 Low
@@ -2995,6 +3045,7 @@ Linealmente
 Lipschutz
 Learning
 Lineales
+Latinoam
 Quick
 Qu
 Qui
@@ -3510,6 +3561,7 @@ brindada
 barato
 border
 bisecci
+bases
 ASC
 Automatizar
 Administrador
@@ -3681,6 +3733,8 @@ Independencia
 Identificar
 Interpreta
 Implemente
+Incorporar
+Interprete
 Rightarrow
 Resumen
 Reducir
@@ -3765,6 +3819,8 @@ Redondeo
 Resoluci
 Regula
 Rolle
+Rango
+Rouch
 Empresa
 Entrevistador
 Ejemplo
@@ -3864,6 +3920,10 @@ Elija
 Encontrar
 Extendido
 Estudiar
+Espacio
+Ejercitar
+Extienda
+Enuncie
 Fecha
 Formato
 Flujo
@@ -3935,6 +3995,7 @@ For
 Files
 Falsi
 Fijo
+Frobenius
 Vender
 Validaci
 Validaciones
@@ -4056,6 +4117,7 @@ Bibliograf
 Bloque
 Bisecci
 Bolzano
+Bases
 ginas
 gusta
 gesti

@@ -498,6 +498,20 @@ Decida, justificando su respuesta, la verdad o falsedad de las siguientes propos
 
 **a)** Si una matriz es escalar, entonces es diagonal.
 
+**no necesariamente se cumple esta deifinición, por ejemplo la siguiente matriz es escalar y no es diagonal:**
+$$
+\begin{pmatrix}
+2&4 \\
+2&6
+\end{pmatrix} = 2\begin{pmatrix}
+1&2 \\
+1&3
+\end{pmatrix} \neq \begin{pmatrix}
+a&0 \\
+0&b
+\end{pmatrix}
+$$
+
 **b)** Si $A$ es antisimétrica, entonces $\forall n \in \mathbb{N}$, $A^n$ es también antisimétrica.
 
 **c)** La suma de dos matrices inversibles es también una matriz inversible.

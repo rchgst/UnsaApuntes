@@ -520,6 +520,8 @@ Decida, justificando su respuesta, la verdad o falsedad de las siguientes propos
 
 **a)** Si un sistema de ecuaciones lineales tiene menos ecuaciones que incógnitas, entonces tiene infinitas soluciones.
 
+**al tener mas incognitas que ecuaciones en alguna de las ecuaciones voy a poder expresar una incognita en función de las restantes, esto hace que la incognita dependa de las restantes y como las otras incognitas pueden tomar cualquier valor en este caso el cuerpo de los reales podemos ver que la solución es infinita.**
+
 **b)** Todo sistema de ecuaciones lineales homogéneo con más ecuaciones que incógnitas tiene infinitas soluciones.
 
 **c)** Si en un sistema de ecuaciones lineales una ecuación es múltiplo de otra, entonces el sistema tiene infinitas soluciones.

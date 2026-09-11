@@ -510,5 +510,13 @@
       ]
     }
   ],
-  "lastNotifiedReleaseVersion": "4.12.5"
+  "lastNotifiedReleaseVersion": "4.12.5",
+  "googleCalendarSyncQueue": [
+    {
+      "taskPath": "ALGA/Anton, H. (2004). Introducción al álgebra lineal (3ª ed.). Limusa.md",
+      "requestedAt": 1788875702838,
+      "attempts": 0,
+      "lastError": "Google Calendar sync is not ready"
+    }
+  ]
 }
