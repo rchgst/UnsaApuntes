@@ -1,17 +1,22 @@
 ### demostración de limites para el final.
 
 sean L, M, a y k números reales y  ademas:
+
 $$
 \begin{matrix}
 \lim_{ x \to a } f(x) = L \\
 \lim_{ x \to a } g(x) = M
 \end{matrix} 
 $$
+
 demostrar a continuación los siguientes limites usando la definición formal de limites:
 
-1. $$
+1.
+
+$$
 \lim_{ x \to a } f(x)+g(x) = L+M
 $$
+
 $$
 \begin{matrix}
 \text{hipotesis: } 0<|x-a|<\delta \Rightarrow |f(x)+g(x) ~-~(L+M)| < \epsilon \\
@@ -38,10 +43,14 @@ $$
 \text{q.e.d}
 \end{matrix}
 $$
-2. $$
+
+2.
+
+$$
 \lim_{ x \to a } k \cdot f(x) = k \cdot L
- $$
- $$
+$$
+
+$$
  \begin{matrix}
  \text{hipotesis: } 0<|x-a|<\delta \Rightarrow |k \cdot f(x) - k \cdot L| < \epsilon \\
  \Rightarrow |k| \cdot |f(x) - L| < \epsilon \\
@@ -49,10 +58,14 @@ $$
   \\
  \text{basta con tomar: } \delta = \frac{\epsilon}{|k|} \text{ y se cumple la definición.}
  \end{matrix}
- $$
- 3. $$
+$$
+
+ 3.
+
+$$
  \lim_{ x \to a } f(x) \cdot g(x) = LM 
- $$
+$$
+
 $$
 \begin{matrix}
 \text{Hipótesis 1: } \lim_{x \to a} f(x) = L \quad \text{y} \quad \text{Hipótesis 2: } \lim_{x \to a} g(x) = M \\
@@ -96,9 +109,13 @@ $$
 \text{q.e.d.}
 \end{matrix}
 $$
-4. $$
+
+4.
+
+$$
 \lim_{ x \to a } \frac{1}{g(x)}=\frac{1}{M}
 $$
+
 $$
 \begin{matrix}
 \text{hipotesis: } 0<|x-a|<\delta \Rightarrow | \frac{1}{g(x)}-\frac{1}{M}| < \epsilon\\
@@ -120,22 +137,42 @@ $$
 \text{basta con tomar un }\delta = \frac{\epsilon \cdot |M|^2}{2}
 \end{matrix}
 $$
-5. $$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \left[ f(x) \cdot \frac{1}{g(x)} \right]$$$$\text{Por el Teorema del Producto: } \left( \lim_{x \to a} f(x) \right) \cdot \left( \lim_{x \to a} \frac{1}{g(x)} \right)$$
-$$\text{Y por el Teorema del Inverso: }~~ L \cdot \frac{1}{M} = \frac{L}{M}$$
-$$q.e.d$$
 
-6. $$
+5.
+
+$$
+\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \left[ f(x) \cdot \frac{1}{g(x)} \right]$$$$\text{Por el Teorema del Producto: } \left( \lim_{x \to a} f(x) \right) \cdot \left( \lim_{x \to a} \frac{1}{g(x)} \right)
+$$
+
+$$
+\text{Y por el Teorema del Inverso: }~~ L \cdot \frac{1}{M} = \frac{L}{M}
+$$
+
+$$
+q.e.d
+$$
+
+6.
+
+$$
 \lim_{ x \to a } [f(x)]^n = L^n 
 $$
+
 $$
 \begin{matrix}
 0<|x-a|<\delta \Rightarrow |[f(x)]^n-L^n|<\epsilon \\
 tarea
 \end{matrix}
 $$
-7. $$
+
+7.
+
+$$
 \lim_{ x \to a } \sqrt{f(x)}=\sqrt{ L }
 $$
-8. $$
+
+8.
+
+$$
 \text{unicidad del limite: } \lim_{ x \to a } f(x) = L_{1} ~~ \land ~~ \lim_{ x \to a } f(x) = L_{2} \Rightarrow L_{1} = L_{2}  
 $$

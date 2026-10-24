@@ -16,15 +16,19 @@ BEGIN j := 1;
 	END 
 END {Buscar};
 ```
+
 $$
 i)~~~~T_{min}(n)= 1+2+3=6
 $$
+
 $$
 ii)~~~~T_{máx}(n)=1+ \left(\left(\sum_{i=1}^{n-1} 4+2 \right) +4 \right)=6n+2
 $$
+
 $$
 iii)~~~~ T_{med}= \sum_{i=1}^n (6i+2) \cdot \frac{1}{n}=\frac{1}{n} \left[ 6\sum_{i=1}^n i+ 2\sum_{i=1}^n 1\right] = \frac{1}{n} \left[ 6 \cdot \frac{(n+1)n}{2} +2n\right]
 $$
+
 ## N° 2 Calcular el costo temporal de los siguientes algoritmos:
 ```Pascal
 FUNCTION Producto (n, m: Integer): Integer;
@@ -36,9 +40,11 @@ BEGIN
     Producto := prod
 END; {Producto}
 ```
+
 $$
 T_{max}(n) = 1 + \left( n+\sum_{i=1}^n 2 \right)+ 1=3n+2
 $$
+
 ```Pascal
 FUNCTION Producto (n, m: Integer): Integer;
 VAR i, j, prod: Integer;
@@ -50,9 +56,11 @@ BEGIN
     Producto := prod
 END; {Producto}
 ```
+
 $$
 T_{máx}(n)= 1+ \left[ m + \sum_{i=1}^m \left( n + \sum_{j=1}^n 2 \right) \right]+1= 1+ \left[ m+m \cdot \left( n+2n \right) \right] +1= m+4mn+2
 $$
+
 $$
 \text{sea n } = máx(m,n) \Rightarrow 4n^2+n+2
 $$

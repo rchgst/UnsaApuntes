@@ -31,13 +31,18 @@ voy a listar a continuación una serie de reglas para la contabilización de ope
 	* $T[(condición)*k]+T(S)$
 * $for(\text{int i = 1 ; i < n ; i ++})\{sentencia\}$ 
 	 para contabilizar las operaciones de un for se utiliza la siguiente formula, donde n es la cantidad de iteraciones:
+
 $$
 T=n+ \sum_{j=1}^{n}S_{j}
 $$
+
 * para el ciclo while tenemos la siguiente formula:
-* $$
+*
+
+$$
 T=((N°iteraciones)\cdot (T(S)+ T(condición)))+T(condición)
 $$
+
 	esta formula se debe a que antes de salir del ciclo hace una ultima evaluación de la condición si es falsa sale del ciclo por eso se suma un $T(condición)$ al final, luego la principal expresión es $n$ veces la evaluación de la condición que dan verdaderas antes de que se corte el ciclo y $n$ veces la sentencia.
 
 
@@ -61,9 +66,11 @@ end {Buscar};
 ```
 
 empezamos a contar desde la linea 5, que tiene una asignación, luego la siguiente linea es un while donde aplicamos la formula, después sumamos las OE del if-else:
+
 $$
 T=\underbrace{1}_{j:=1}+\underbrace{\left( 3+(n*(3+2)) \right)}_{\text{formula del while}} +\underbrace{2+1}_{\text{if-else}} = 5n+7
 $$
+
 ```Pascal
 
 FUNCTION Producto(n,m: Integer): Integer; 
@@ -77,9 +84,11 @@ END; {Producto}
 ```
 
 comenzando desde la linea 4 tenemos:
+
 $$
 T = \underbrace{1}_{Prod:=0} + \underbrace{n(1+2)}_{for} + \underbrace{1}_{Producto:=prod} = 3n+2
 $$
+
 ```Pascal
 FUNCTION Producto(n,m: Integer): Integer; 
 VAR i,j,prod: Integer; 
@@ -93,9 +102,11 @@ END; {Producto}
 ```
 
 compliquemos un poco las cosas, al tener ciclos anidados estamos calculando sumatorias anidadas:
+
 $$
 T = 1 + n(1+(m(1+2)))+1= n+3nm+2 \Rightarrow \text{sea n: }max(n,m) \Rightarrow T= 3n²+n+2
 $$
+
 véase como hacemos el n(1+S) del primer for y adentro esta S = m(1+S2) del segundo for quedando : $n(1+(m(1+2)))$.
 
 **Calculo de numero de operaciones con Pseudocodigo:**
@@ -116,6 +127,7 @@ Retornar {L,U}
 ```
 
 ahora se complico peor, porque si bien las únicas sentencias que suman algo son las de las lineas: $3,5,7,8,10,11$ . no nos olvidemos que están dentro de un ciclo lo cual indica aplicarles la formula:
+
 $$
 \begin{gather}
 T(c) = (n-k-1) +\sum_{j=k+1}^{n} 2 = (n-k-1)+2(n-k) = 3n-3k-11
@@ -138,9 +150,11 @@ imaginemos que una calculadora quiere sumar dos números y el resultado correcto
 	****
 	****
 	Podemos definir un conjunto finito donde quepan en el todos los números que pueden ser representado en ciertas condiciones, se va a denominar malla y se expresa de la siguiente  manera:
-	$$
+
+$$
 	F \subset \mathbb{R} : f = \pm m \cdot \beta ^{~e-t}
-	$$
+$$
+
 	donde $\beta$ es la base del número (por lo general base 2 o 16), el $t$ es la cantidad de dígitos de precisión que tiene un número, $e$ es el exponente pero cumple la particularidad de: $L<e<U$.**
 	L es es el menor exponente con el que se pueden representar números en la maquina.
 	U es el mayor exponente con el que se pueden representar números.

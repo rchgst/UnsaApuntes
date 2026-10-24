@@ -17,13 +17,17 @@ b) Enunciar las condiciones suficientes para la aplicación de los métodos de B
 
 **Definiciones:**
 * Sea el intervalo $[a,b]$ puedo garantizar que hay al menos una raiz si se cumple el teorema de Bolzano:
+
 $$
-\text{sea $f$ una función continua en el intervalo $[a,b]$ y }f(a)f(b)<0 \Rightarrow \exists c \in (a,b) : f(c)=0
+\text{sea f una función continua en el intervalo $[a,b]$ y }f(a)f(b)<0 \Rightarrow \exists c \in (a,b) : f(c)=0
 $$
+
 * Puedo garantizar que la raiz que encontre en el intervalo $[a,b]$ es única si ademas de lo anterior tambien se cumple el teorema de Rolle:
+
 $$
-\text{sea $f$ una función continua en el intervalo $[a,b]$ y derivable en $(a,b)$ } \Rightarrow \exists c \in (a,b)| f'(c)=0
+\text{sea f una función continua en el intervalo $[a,b]$ y derivable en $(a,b)$ } \Rightarrow \exists c \in (a,b)| f'(c)=0
 $$
+
 * Las condiciones suficientes para la aplicación de los métodos de Bisección, Regula Falsi y Regula Falsi modificada son los siguientes:
 	1. La función debe ser monotona.
 	2. Se cumple la hipotesis de Bolzano es decir: $f(a)f(b)<0$
@@ -159,7 +163,7 @@ Encontrar la raíz de $f(x) = (x - 1)^{2}$ con 4 cifras de precisión decimal us
 | *i* | $x_{i}$ | \|$f(x_{i})$\| | \|$f(x_{i})-f(x_{i-1})$\| |
 | --- | ------- | -------------- | ------------------------- |
 | *0* | $2$     | $1$            | $-$                       |
-| *1* | $$      |                |                           |
+| *1* | |                |                           |
 
 
 ---
@@ -172,7 +176,9 @@ Justificar que la fórmula de Newton corresponde a un proceso iterativo de segun
 ### Ejercicio Nº 9
 Dada la ecuación $f(x) = 0$ y la fórmula de Halley:
 
-$$x_{n+1} = x_{n} - \frac{2f(x_{n})f'(x_{n})}{2(f'(x_{n}))^{2} - f(x_{n})f''(x_{n})}$$
+$$
+x_{n+1} = x_{n} - \frac{2f(x_{n})f'(x_{n})}{2(f'(x_{n}))^{2} - f(x_{n})f''(x_{n})}
+$$
 
 Mostrar que da lugar a un proceso iterativo de tercer orden. Use este modelo para encontrar una raíz aproximada con seis dígitos de precisión usando la función del ejercicio 2.
 
@@ -186,7 +192,9 @@ Estudiar la convergencia del método de Bisección y determine la cantidad neces
 ### Ejercicio Nº 11
 Utilizar el método de **Aitken** para acelerar la convergencia en la aproximación de la solución para:
 
-$$f(x) = x \, e^{x} - 1$$
+$$
+f(x) = x \, e^{x} - 1
+$$
 
 ---
 

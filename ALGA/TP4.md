@@ -37,9 +37,11 @@ Dado un espacio vectorial $V$:
 
 **Bases canonicas:**
 	se le denomina base canonica al conjunto de vectores cuyos elementos son iguales a  las filas de una matriz identidad lo que hace que la sea un conjunto linealmente independiente y por lo tanto constituye una base de $\mathbb{R}^n$ :
-	$$
+
+$$
 	v_{1}=(1,0,0,\dots,0), v_{2}=(0,1,0,\dots,0), v_{3}=(0,0,1\dots,0),\dots,v_{n}=(0,0,\dots,1)
-	$$
+$$
+
 	**Base canonica de $\mathbb{R}^2$:**
 		B=$\{(0,1),(1,0)\}$
 	**Base canonica de $\mathbb{R}^3$:**
@@ -69,6 +71,7 @@ c) $\mathbb{B} = \left\{ \begin{pmatrix} -1 \\ 2 \\ 1 \end{pmatrix}, \begin{pmat
 d) $\mathbb{B} = \left\{ \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix}, \begin{pmatrix} 1 & 0 \\ -1 & 1 \end{pmatrix} \right\} \subset M_{2\times2}(\mathbb{R})$
 
 ### Solución:
+
 $$
 \begin{matrix}
 \text{los incisos a y b no son una base de }\mathbb{R}^2 \text{ pues todas sus bases tienen que tener solamente 2 elementos.} \\ \\
@@ -145,6 +148,7 @@ c)~~~ \text{para decidir si es una base empezamos verificando su independencia l
 d)~~~\text{consultar si puedo aplicar teorema de 2 vectores.}
 \end{matrix}
 $$
+
 ---
 
 ### Ejercicio 3
@@ -164,6 +168,7 @@ f) $\mathbb{S}_{6} = \left\{ \begin{pmatrix} x \\ y \end{pmatrix} \in \mathbb{R}
 
 ### Solución:
 **a)**
+
 $$
 \begin{matrix}
 \text{por teorema la dimención de un espacio es la cantidad de variables libres de su ecuación general} \\ \\
@@ -177,7 +182,9 @@ y=x+2z \Rightarrow 2VL \therefore dim~ \mathbb{S}_{1}=2 \\ \\
 \text{de dos vectores que no son multiplo escalar uno del otro por lo tanto son }LI \text{ entonces es una base de }\mathbb{S}_{1}
 \end{matrix}
 $$
+
 **b)**
+
 $$
 \begin{matrix}
 \text{ como ya tenemos el conjunto generador comprobamos si es }LI \\ \\
@@ -267,7 +274,9 @@ $$
 \end{pmatrix} \right\} \text{ conforman una base de }\mathbb{S_{2}}
 \end{matrix}
 $$
+
 **c)**
+
 $$
 \begin{matrix}
 \text{me va a interesar saber cual es la ecuación de formación del conjunto }\mathbb{S}_{2}: \\ \\
@@ -339,7 +348,9 @@ SG= \left( -\frac{1}{2}z , \frac{3}{2}z, z \right) \Rightarrow 1VL \Rightarrow d
 \end{pmatrix} \in \mathbb{S}_{3} \Rightarrow \{\vec{v}\} \text{ es una base de }\mathbb{S}_{3} \text{ por que es }LI \text{ y es generador.}
 \end{matrix}
 $$
+
 **d)**
+
 $$
 \begin{matrix}
 \text{sabemos que una matriz simetrica tiene la forma: }\begin{pmatrix}
@@ -403,11 +414,15 @@ x \begin{pmatrix}
 dim(\mathbb{S})=6
 \end{matrix}
 $$
+
 **e)**
+
 $$
 \text{consultar como demostrar que es matriz nula}
 $$
+
 **f)**
+
 $$
 \begin{matrix}
 \text{de la solución general obtenemos que los vectores generadores del subespacio son los que cumplen:} \\ \\
@@ -428,8 +443,13 @@ $$
 
 ### Ejercicio 4
 1. Determine una base del espacio solución del siguiente sistema homogéneo de 2 ecuaciones lineales con 4 incógnitas:
-   $$\begin{cases} x + y - 2z + t = 0 \\ x - y - z + 4t = 0 \end{cases}$$
+
+$$
+\begin{cases} x + y - 2z + t = 0 \\ x - y - z + 4t = 0 \end{cases}
+$$
+
 **Solución:**
+
 $$
 \begin{matrix}
 \overbrace{\begin{pmatrix}
@@ -450,9 +470,11 @@ SG= \{ (3y-7t, y, 2y-3t,t) \} \\ \\
 \text{luego una base del espacio solución: } \left\{ (3,1,2,0),(-7,0,-3,1) \right\} \text{ y la dimencion es }2.
 \end{matrix}
 $$
+
 2. Extienda la base del espacio solución anterior a una base de $\mathbb{R}^{4}$.
 
 **Solución:**
+
 $$
 \begin{matrix}
 \text{para extender esta base a una de }\mathbb{R}^4 \text{ lo que haremos es agregar vectores combenientemente para que} \\
@@ -500,14 +522,20 @@ B=\left\{ (3,1,2,0),(-7,0,-3,1),(1,0,0,0),(0,1,0,0) \right\} \\ \\
 B \text{ es una base de }\mathbb{R}⁴
 \end{matrix}
 $$
+
 ---
 
 ### Ejercicio 5
 Encuentre, justificando su respuesta, una base de $\mathbb{R}^{4}$ que contenga a los vectores:
-$$u = \begin{pmatrix} 1 \\ 0 \\ 1 \\ 1 \end{pmatrix}, \quad v = \begin{pmatrix} 1 \\ 2 \\ -1 \\ 1 \end{pmatrix}$$
+
+$$
+u = \begin{pmatrix} 1 \\ 0 \\ 1 \\ 1 \end{pmatrix}, \quad v = \begin{pmatrix} 1 \\ 2 \\ -1 \\ 1 \end{pmatrix}
+$$
+
 ¿Es única? Justifique su respuesta.
 
 **Solución:**
+
 $$
 \begin{matrix}
 \text{al igual que en el inciso anterior armamos una base con los vectores que tenemos y la extendemos} \\
@@ -628,11 +656,15 @@ B=\left\{ \begin{pmatrix}
 \text{el conjunto es linealmente dependiente y por lo tanto }B \text{ es una base de }\mathbb{R}⁴, \text{no es la unica.}
 \end{matrix}
 $$
+
 ---
 
 ### Ejercicio 6
 Determine si existen valores del parámetro $k$ para que los siguientes conjuntos:
-$$\mathcal{S}_{1} = \left\{ \begin{pmatrix} k \\ 1 \\ 1 \end{pmatrix}, \begin{pmatrix} 1 \\ k \\ 1 \end{pmatrix}, \begin{pmatrix} 2 \\ k+1 \\ 1 \end{pmatrix} \right\}, \qquad \mathcal{S}_{2} = \left\{ \begin{pmatrix} k \\ 1 \\ 1 \end{pmatrix}, \begin{pmatrix} 1 \\ k \\ 1 \end{pmatrix}, \begin{pmatrix} 2 \\ 1 \\ k-1 \end{pmatrix} \right\}$$
+
+$$
+\mathcal{S}_{1} = \left\{ \begin{pmatrix} k \\ 1 \\ 1 \end{pmatrix}, \begin{pmatrix} 1 \\ k \\ 1 \end{pmatrix}, \begin{pmatrix} 2 \\ k+1 \\ 1 \end{pmatrix} \right\}, \qquad \mathcal{S}_{2} = \left\{ \begin{pmatrix} k \\ 1 \\ 1 \end{pmatrix}, \begin{pmatrix} 1 \\ k \\ 1 \end{pmatrix}, \begin{pmatrix} 2 \\ 1 \\ k-1 \end{pmatrix} \right\}
+$$
 
 1. Generen un subespacio de dimensión 2.
 2. Constituyan una base de $\mathbb{R}^{3}$.
@@ -657,6 +689,7 @@ Dado el vector $v = \begin{pmatrix} -1 \\ 4 \end{pmatrix}$ y el conjunto $\mathb
 3. Si las coordenadas de un vector son $(u)_{\mathbb{B}} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}$, ¿cuáles son las coordenadas del vector $u$ en la base canónica de $\mathbb{R}^{2}$? Justifique su respuesta.
 
 **Solución:**
+
 $$
 \begin{matrix}
 \alpha_{1}\begin{pmatrix} 3 \\ 2 \end{pmatrix}+\alpha_{2} \begin{pmatrix} -1 \\ 2 \end{pmatrix}= \begin{pmatrix}
@@ -700,9 +733,11 @@ $$
 \end{pmatrix}
 \end{matrix}
 $$
+
 ![[Pasted image 20260909202105.png]]
 
 **3)**
+
 $$
 \begin{matrix}
 \text{por definicion de base: } \\ \\
@@ -721,12 +756,17 @@ $$
 \end{pmatrix}
 \end{matrix}
 $$
+
 ---
 
 ### Ejercicio 9
 1. Dada una matriz $A \in M_{m\times n}(\mathbb{R})$, defina $R_{A}$, $C_{A}$, $N_{A}$.
 2. Para cada una de las siguientes matrices:
-   $$A = \begin{pmatrix} 1 & 1 & -1 & 0 \\ 2 & 2 & -2 & 0 \\ 0 & 1 & 2 & 3 \end{pmatrix}, \qquad B = \begin{pmatrix} 2 & 2 & -2 & 0 \\ -1 & -1 & 1 & 0 \\ 1 & 0 & 1 & 1 \\ 1 & 0 & 1 & 0 \end{pmatrix}$$
+
+$$
+A = \begin{pmatrix} 1 & 1 & -1 & 0 \\ 2 & 2 & -2 & 0 \\ 0 & 1 & 2 & 3 \end{pmatrix}, \qquad B = \begin{pmatrix} 2 & 2 & -2 & 0 \\ -1 & -1 & 1 & 0 \\ 1 & 0 & 1 & 1 \\ 1 & 0 & 1 & 0 \end{pmatrix}
+$$
+
    determine:  
    a) $R_{A}$, $R_{B}$, $C_{A}$, $C_{B}$, $N_{A}$ y $N_{B}$.  
    b) Una base y la dimensión de los espacios anteriores.  
@@ -753,7 +793,10 @@ $$
 
 ### Ejercicio 11
 Aplique el teorema de Rouché-Frobenius para determinar si existen valores del parámetro $k$ de manera que el sistema:
-$$\begin{cases} x - y + 2z = k \\ 3x - 2y + kz = 1 \\ 2x - y + z = 1 + k \end{cases}$$
+
+$$
+\begin{cases} x - y + 2z = k \\ 3x - 2y + kz = 1 \\ 2x - y + z = 1 + k \end{cases}
+$$
 
 a) Tenga solución única.  
 b) Tenga infinitas soluciones.  
@@ -765,7 +808,11 @@ c) No tenga solución.
 Decida, justificando su respuesta, la verdad o falsedad de las siguientes proposiciones:
 1. Si un conjunto genera a $\mathbb{R}^{3}$, entonces dicho conjunto contiene exactamente 3 vectores de $\mathbb{R}^{3}$.
 2. Si $\mathbb{B} = \{v_{1}, v_{2}, v_{3}\}$ es una base para un espacio vectorial $V$, entonces $\mathbb{B}' = \{w_{1}, w_{2}, w_{3}\}$ también es una base de $V$, con:
-   $$w_{1} = v_{1} + v_{2} + v_{3}, \quad w_{2} = v_{2} + v_{3}, \quad w_{3} = v_{3}$$
+
+$$
+w_{1} = v_{1} + v_{2} + v_{3}, \quad w_{2} = v_{2} + v_{3}, \quad w_{3} = v_{3}
+$$
+
 3. Si $A \in M_{3\times5}(\mathbb{R})$, entonces $\rho(A) = 3$.
 4. Si $A \in M_{n\times n}(\mathbb{R})$, entonces $R_{A} = C_{A}$.
 5. Si $A \in M_{m\times n}(\mathbb{R})$ y $\rho(A) = n$, entonces el sistema $AX = B$ tiene solución única.

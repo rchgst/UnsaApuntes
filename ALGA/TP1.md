@@ -39,6 +39,7 @@ Que el estudiante sea capaz de:
 **c)** Determine el valor de $c$ para que la ecuación $c(cx+5) = 2(2x+5)$ tenga infinitas soluciones en $\mathbb{R}$. Justifique su respuesta.
 
 `solución:`
+
 $$
 \begin{matrix}
 c(cx+5)=2(\text{x+5}) \\
@@ -56,6 +57,7 @@ $$
 **d)** Proponga tres pares ordenados $(x, y)$ que satisfagan la ecuación $3x - 2y = 12$. Justifique su elección.
 
 `solución:`
+
 $$
 \begin{matrix}
 \text{para lograr esto lo que hacemos es buscar soluciones particulares} \\
@@ -70,6 +72,7 @@ $$
 **e)** Calcule el valor de $m$ para que el punto $(-2, 3)$ sea solución de la ecuación $2x + y - m = 0$.
 
 `solución:`
+
 $$
 \begin{matrix}
 \text{para lograr esto lo unico que se necesita es remplazar el valor de x e y para despejar m:} \\ \\
@@ -77,7 +80,7 @@ $$
 -4+3-m=0 \\
 -1-m=0 \\
 m=-1 \\
-\therefore 2x+y+1=0 \text{ es la ecuación que tiene de solución al par $(-2,3)$}
+\therefore 2x+y+1=0 \text{ es la ecuación que tiene de solución al par (-2,3)}
 \end{matrix}
 $$
 
@@ -99,10 +102,15 @@ $$
 Las operaciones elementales sobre las ecuaciones de un sistema permiten obtener otros sistemas equivalentes, es decir, con el mismo conjunto solución.
 
 **a)** Considere el sistema:
-$$\begin{cases} 2x + 2y = 2 \\ x + 2y = 6 \end{cases}$$
+
+$$
+\begin{cases} 2x + 2y = 2 \\ x + 2y = 6 \end{cases}
+$$
+
 Transfórmelo en un sistema equivalente de resolución inmediata aplicando operaciones elementales. Indique en cada paso la operación realizada y verifique la solución obtenida en el sistema original.
 
 `solución:`
+
 $$
 \begin{cases}
 2x+2y=2 \\
@@ -120,9 +128,13 @@ y=6
 $$
 
 **b)** Repita el procedimiento para:
-$$\begin{cases} 2x - y + z = 3 \\ x + y + z = 6 \\ x + 2y - z = 2 \end{cases}$$
+
+$$
+\begin{cases} 2x - y + z = 3 \\ x + y + z = 6 \\ x + 2y - z = 2 \end{cases}
+$$
 
 `solución:`
+
 $$
 \begin{matrix}
 \begin{cases}
@@ -146,6 +158,7 @@ z=3 \Rightarrow y=2 \Rightarrow x=1 \\
 cs=\{(1,2,3)\}
 \end{matrix}
 $$
+
 **c)** ¿Qué característica tuvo el sistema final que le permitió resolverlo de inmediato, en ambos casos?
 
 `Lo que permite resolver de manera inmediata el sistema en ambos casos, es el escalonamiento del sistema, una de las variables por lo general la última, tiene asignado un valor automaticamente y con remplazar de abajo hacia arriba el sistema se resuelve.`
@@ -157,7 +170,10 @@ $$
 Las operaciones elementales estudiadas en el ejercicio anterior pueden realizarse de manera más organizada utilizando la matriz ampliada del sistema.
 
 Considere el siguiente sistema:
-$$\begin{cases} x - 2y + 2z = 2 \\ 2x + y + 2z = 8 \\ -x + 3y - 2z = -1 \end{cases}$$
+
+$$
+\begin{cases} x - 2y + 2z = 2 \\ 2x + y + 2z = 8 \\ -x + 3y - 2z = -1 \end{cases}
+$$
 
 **a)** Escriba la matriz ampliada asociada al sistema.
 
@@ -166,6 +182,7 @@ $$\begin{cases} x - 2y + 2z = 2 \\ 2x + y + 2z = 8 \\ -x + 3y - 2z = -1 \end{cas
 **c)** Determine el conjunto solución.
 
 `solución:`
+
 $$
 \begin{matrix} 
 \text{matriz ampliada asociada al sistema: } \\ \\
@@ -210,6 +227,7 @@ x-2y+2z=2 \\
 cs=\left\{ \left(3, 1,\frac{1}{2} \right) \right\}
 \end{matrix}
 $$
+
 ---
 
 ### Ejercicio 5.
@@ -217,8 +235,13 @@ $$
 Resuelva cada uno de los siguientes sistemas mediante el algoritmo de eliminación de Gauss. Clasifique el sistema indicando si es consistente o inconsistente; en caso de ser consistente, determine si posee una única solución o infinitas soluciones. Exprese el conjunto solución de forma paramétrica cuando corresponda.
 
 - **i)** 
-  $$\begin{cases} x + y = 3 \\ 2x - y = 0 \\ 3x + y = 4 \end{cases}$$
+
+$$
+\begin{cases} x + y = 3 \\ 2x - y = 0 \\ 3x + y = 4 \end{cases}
+$$
+
 `solución:`
+
 $$
 \begin{matrix}
 \left( 
@@ -247,9 +270,15 @@ x+y=3 \\
 \therefore cs = \emptyset
 \end{matrix}
 $$
+
 - **ii)** 
-  $$\begin{cases} x + 2y = 1 \\ 2x + y + 3z = 2 \\ 3x + y + 5z = 3 \end{cases}$$
+
+$$
+\begin{cases} x + 2y = 1 \\ 2x + y + 3z = 2 \\ 3x + y + 5z = 3 \end{cases}
+$$
+
 `solución:`
+
 $$
 \begin{matrix}
 \left( \begin{array}{ccc|c}
@@ -272,9 +301,15 @@ x+2y=1 \\
 \therefore cs = \infty
 \end{matrix}
 $$
+
 - **iii)** 
-  $$\begin{cases} x + 2y - z = 1 \\ -3x + y - 2z = 2 \\ -x + 5y - 4z = -2 \end{cases}$$
+
+$$
+\begin{cases} x + 2y - z = 1 \\ -3x + y - 2z = 2 \\ -x + 5y - 4z = -2 \end{cases}
+$$
+
 `solución:`
+
 $$
 \begin{matrix}
 \left( \begin{array}{ccc|c}
@@ -300,9 +335,15 @@ x+2y-z=1 \\
 \therefore cs= \emptyset
 \end{matrix}
 $$
+
 - **iv)** 
-  $$\begin{cases} 2x - 5y + 3z = 4 \\ x - 2y + z = 3 \\ 5x + y + 7z = 11 \end{cases}$$
+
+$$
+\begin{cases} 2x - 5y + 3z = 4 \\ x - 2y + z = 3 \\ 5x + y + 7z = 11 \end{cases}
+$$
+
 `solución:`
+
 $$
 \begin{matrix}
 \left( \begin{array}{ccc|c}
@@ -328,9 +369,15 @@ z=-2
 \therefore cs=\{(5,0,-2)\}
 \end{matrix}
 $$
+
 - **v)** 
-  $$\begin{cases} -x - 2y + 2z - w = -5 \\ x + 2y - z + w = 5 \\ 2x + 4y - 3z + w = 8 \end{cases}$$
+
+$$
+\begin{cases} -x - 2y + 2z - w = -5 \\ x + 2y - z + w = 5 \\ 2x + 4y - 3z + w = 8 \end{cases}
+$$
+
 `solución:`
+
 $$
 \begin{matrix}
 \left( \begin{array}{cccc|c}
@@ -349,9 +396,15 @@ z=0 \\
 incognitas-ecuaciones>0\Rightarrow cs=\infty
 \end{matrix}
 $$
+
 - **vi)** 
-  $$\begin{cases} 2x + y - 2z + t = -3 \\ x - y + z + t = 4 \\ -3x - 2y + 2z - 2t = 3 \\ 2x - y + 3z - t = 9 \end{cases}$$
+
+$$
+\begin{cases} 2x + y - 2z + t = -3 \\ x - y + z + t = 4 \\ -3x - 2y + 2z - 2t = 3 \\ 2x - y + 3z - t = 9 \end{cases}
+$$
+
 `solución:`
+
 $$
 \begin{matrix}
 \left(\begin{array}{cccc|c}
@@ -362,9 +415,15 @@ $$
 \end{array} \right)
 \end{matrix}
 $$
+
 - **vii)** 
-  $$\begin{cases} 2x + y - 3 = z \\ x - 2y + 2z = 4 \\ 3x - 4y + 4z = 10 \end{cases}$$
+
+$$
+\begin{cases} 2x + y - 3 = z \\ x - 2y + 2z = 4 \\ 3x - 4y + 4z = 10 \end{cases}
+$$
+
 `solución:`
+
 $$
 \begin{matrix}
 \left( \begin{array}{ccc|c}
@@ -390,9 +449,15 @@ $$
 \end{cases} \Rightarrow cs = \infty
 \end{matrix}
 $$
+
 - **viii)** 
-  $$\begin{cases} 2x + y - z = 0 \\ x - 2y + 2z = 0 \\ 3x - 4y + 4z = 0 \end{cases}$$
+
+$$
+\begin{cases} 2x + y - z = 0 \\ x - 2y + 2z = 0 \\ 3x - 4y + 4z = 0 \end{cases}
+$$
+
 `solución:`
+
 $$
 \begin{matrix}
 \begin{pmatrix}
@@ -418,9 +483,15 @@ $$
 \end{cases} \Rightarrow cs=  \infty
 \end{matrix}
 $$
+
 - **ix)** 
-  $$\begin{cases} x + z = y \\ 2x - 3y + z = 0 \\ x - 2y + z = 0 \end{cases}$$
+
+$$
+\begin{cases} x + z = y \\ 2x - 3y + z = 0 \\ x - 2y + z = 0 \end{cases}
+$$
+
 `solución:`
+
 $$
 \begin{matrix}
 \begin{pmatrix}
@@ -466,13 +537,22 @@ Aplique el algoritmo de Gauss - Jordan para encontrar la solución de los sistem
 Considere los siguientes sistemas lineales con parámetros:
 
 - **i)** 
-  $$\begin{cases} kx + y = m \\ mx + y = k \end{cases}$$
+
+$$
+\begin{cases} kx + y = m \\ mx + y = k \end{cases}
+$$
 
 - **ii)** 
-  $$\begin{cases} x + ky + z = k \\ 2x + (k+1)y + 2z = 1 \\ x + y + kz = 1 \end{cases}$$
+
+$$
+\begin{cases} x + ky + z = k \\ 2x + (k+1)y + 2z = 1 \\ x + y + kz = 1 \end{cases}
+$$
 
 - **iii)** 
-  $$\begin{cases} mx + y + z = 1 \\ x + my + z = 1 \\ x + y + mz = 1 \end{cases}$$
+
+$$
+\begin{cases} mx + y + z = 1 \\ x + my + z = 1 \\ x + y + mz = 1 \end{cases}
+$$
 
 **a)** Determine los valores del parámetro para los cuales el sistema posee una única solución, infinitas soluciones o ninguna solución.
 

@@ -24,31 +24,42 @@ Que el estudiante sea capaz de:
 **a)** Evalúe las siguientes sumatorias:
 - i) $$\sum_{k=1}^{4} 2k$$
 `solución:`
+
 $$
 \sum_{k=1}^42k=2+4+6+8=20
 $$
+
 - ii) $$\sum_{k=0}^{5} (2k+1)$$
 `solución:`
+
 $$
 \sum_{k=0}^5(2k+1)=1+3+5+7+9=25
 $$
+
 - iii) $$\sum_{k=0}^{4} \frac{(-1)^k n}{n+1}$$
 `solución:`
+
 $$
 \sum_{k=0}^4\frac{(-1)^kn}{n+1}= \frac{4}{5}- \frac{4}{5} +\frac{4}{5}- \frac{4}{5}+\frac{4}{5}= \frac{4}{5}
 $$
+
 - iv) $$\sum_{k=1}^{4} a_{k2}$$
 `solución:`
+
 $$
 \sum_{k=1}^4a_{k2}= a_{12} + a_{22} + a_{32} + a_{44}
 $$
+
 - v) $$\sum_{k=1}^{4} a_{3k} b_{k2}$$
 `solución:`
+
 $$
 \sum_{k=1}^4 a_{31}b_{12}+a_{32}b_{22}+a_{33}b_{32}+a_{34}b_{42}
 $$
+
 - vi) $$\sum_{i=1}^{2} \sum_{j=1}^{2} (-1)^{i+j} a_{ij} M_{ij}$$
 `solución:`
+
 $$
 \sum_{i=1}^2\sum_{j=1}^2(-1)^{i+j}a_{ij}M_{ij}=a_{11}M_{11}+a_{12}M_{12}+a_{21}M_{21}+a_{22}M_{22}
 $$
@@ -60,18 +71,23 @@ $$
 - iv) $a_{11} + b_{11} + a_{22} + b_{22} + \dots + a_{nn} + b_{nn}$
 
 `solución:`
+
 $$
 i)~~~ \frac{1}{3} - \frac{1}{12} + \frac{1}{48} - \frac{1}{192} = \sum_{i=0}^3 \frac{(-1)^i1}{3 \cdot 4^i}
 $$
+
 $$
 ii)~~~ \beta b_{11} + \beta b_{21} + \beta b_{12} + \beta b_{22} + \beta b_{13} + \beta b_{23} = \sum_{i=1}^3\left( \sum_{j=1}^2 \beta b_{ji} \right)
 $$
+
 $$
 iii)~~~ c_{21}d_{12} + c_{22}d_{22} + c_{23}d_{32} + c_{24}d_{42} = \sum_{i=1}^4c_{2i}d_{i_{2}}
 $$
+
 $$
 iv)~~~ a_{11} + b_{11} + a_{22} + b_{22} + \dots + a_{nn} + b_{nn} = \sum_{i=1}^n(a_{ii}+b_{ii})
 $$
+
 ---
 
 ### Ejercicio 2:
@@ -83,6 +99,7 @@ Determine y exprese las siguientes matrices:
 - **iii)** $C_{3 \times 3} = (c_{ij}) \quad / \quad c_{ij} = \begin{cases} 3 & \text{si } i = j \\ 0 & \text{si } i \neq j \end{cases}$
 - **iv)** $D_{3 \times 3} = (d_{ij}) \quad / \quad d_{ij} = \begin{cases} 0 & \text{si } i = j \\ j - 2i & \text{si } i \neq j \end{cases}$
 `solución:`
+
 $$
 \begin{matrix}
 i)~~~ \begin{pmatrix}
@@ -111,9 +128,13 @@ $$
 
 Dadas las siguientes matrices:
 
-$$A = \begin{pmatrix} 1 & 3 \\ 3 & 1 \end{pmatrix}, \quad B = \begin{pmatrix} 1 & 3 \\ 2 & 0 \\ 2 & 1 \end{pmatrix}, \quad C = \begin{pmatrix} 0 & 1 & 2 \\ 1 & 2 & -1 \\ 1 & 0 & 1 \end{pmatrix}$$
+$$
+A = \begin{pmatrix} 1 & 3 \\ 3 & 1 \end{pmatrix}, \quad B = \begin{pmatrix} 1 & 3 \\ 2 & 0 \\ 2 & 1 \end{pmatrix}, \quad C = \begin{pmatrix} 0 & 1 & 2 \\ 1 & 2 & -1 \\ 1 & 0 & 1 \end{pmatrix}
+$$
 
-$$D = \begin{pmatrix} 1 & 2 & 0 \\ 1 & 2 & -3 \end{pmatrix}, \quad E = \begin{pmatrix} 3 & 2 & 1 \\ 6 & 4 & 2 \\ 3 & 2 & 1 \end{pmatrix}, \quad F = \begin{pmatrix} -1 & 0 & 0 \\ 1 & 2 & 0 \\ 1 & 1 & 1 \end{pmatrix}$$
+$$
+D = \begin{pmatrix} 1 & 2 & 0 \\ 1 & 2 & -3 \end{pmatrix}, \quad E = \begin{pmatrix} 3 & 2 & 1 \\ 6 & 4 & 2 \\ 3 & 2 & 1 \end{pmatrix}, \quad F = \begin{pmatrix} -1 & 0 & 0 \\ 1 & 2 & 0 \\ 1 & 1 & 1 \end{pmatrix}
+$$
 
 **a)** Realice, de ser posible, las operaciones que se indican a continuación. En los casos que no sea posible, justifique el por qué:
 - i) $A + A^T= \begin{pmatrix} 2&6 \\  6&2\end{pmatrix}$
@@ -128,6 +149,7 @@ $$D = \begin{pmatrix} 1 & 2 & 0 \\ 1 & 2 & -3 \end{pmatrix}, \quad E = \begin{pm
 **b)** Encuentre $X$ tal que $B - 2X = D^T$.
 
 `solución:`
+
 $$
 \begin{matrix}
 B-2X=D^T \\
@@ -183,6 +205,7 @@ e&f
 \end{pmatrix}
 \end{matrix}
 $$
+
 **c)** Sea $A = \begin{pmatrix} 5 & 0 \\ 2 & \alpha \end{pmatrix}$. Determine el valor de $\alpha$ para el cual $A$ es una raíz del polinomio $p(x) = x^2 - 25$.  
 *(Nota: En la última igualdad $-25$ representa la matriz escalar del orden que corresponda).*
 
@@ -195,6 +218,7 @@ Decida, justificando su respuesta, la verdad o falsedad de las siguientes propos
 **a)** $\forall A, B \in \mathbb{R}^{n \times n}, \quad (A + B)^2 = A^2 + 2AB + B^2$.
 
 `solución:`
+
 $$
 \begin{matrix}
 (A+B)^2=(A+B)(A+B)=(A+B)A+(A+B)B=A^2+BA+AB+B^2 \\
@@ -203,12 +227,15 @@ $$
 \therefore \text{no es verdadera la proposición.}
 \end{matrix}
 $$
+
 **b)** $\forall A, B, C \in \mathbb{R}^{n \times n}, \quad A \neq \mathbb{O}, \; AB = AC \implies B = C$.
 
 `solución:`
+
 $$
 
 $$
+
 **c)** Si $A \in \mathbb{R}^{m \times n}$ y $B \in \mathbb{R}^{n \times p}$, entonces $(AB)^T = B^T A^T$.
 
 ---
@@ -218,6 +245,7 @@ $$
 **a)** Defina: Matriz simétrica, antisimétrica, triangular, diagonal y escalar. Dé un ejemplo de $3 \times 3$ para cada una de ellas.
 
 `aolución:`
+
 $$
 \begin{matrix} 
 sea ~~A \in M_{n x m} \\ \\
@@ -269,6 +297,7 @@ $$
 Siendo $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ y $B = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, encuentre las condiciones para $a, b, c$ y $d$ para que $A$ y $B$ conmuten.
 
 `solución:`
+
 $$
 \begin{matrix}
 \begin{pmatrix}
@@ -308,6 +337,7 @@ a&b \\
 \end{pmatrix}
 \end{matrix}
 $$
+
 ---
 
 ### Ejercicio 7:
@@ -317,9 +347,11 @@ Si $A = \begin{pmatrix} a & 1 \\ 0 & a \end{pmatrix}$:
 **a)** Determine si existen valores de $a$ para los que la ecuación $AX = X$ tenga solución para una matriz $X_{2 \times 2}$ no nula.
 
 `solución:`
+
 $$
 
 $$
+
 **b)** Demuestre que $\forall n \in \mathbb{N}, \quad A^n = \begin{pmatrix} a^n & n a^{n-1} \\ 0 & a^n \end{pmatrix}$ con $a \neq 0$.
 
 ---
@@ -328,15 +360,20 @@ $$
 
 Dadas las siguientes matrices:
 
-$$A = \begin{pmatrix} 2 & 2 \\ 1 & 3 \end{pmatrix}, \quad B = \begin{pmatrix} 1 & -1 \\ 1 & -1 \end{pmatrix}, \quad C = \begin{pmatrix} 3 & 0 \\ 2 & 1 \end{pmatrix}$$
+$$
+A = \begin{pmatrix} 2 & 2 \\ 1 & 3 \end{pmatrix}, \quad B = \begin{pmatrix} 1 & -1 \\ 1 & -1 \end{pmatrix}, \quad C = \begin{pmatrix} 3 & 0 \\ 2 & 1 \end{pmatrix}
+$$
 
-$$D = \begin{pmatrix} -1 & 2 & 1 \\ 1 & 0 & 1 \\ 0 & 1 & 2 \end{pmatrix}, \quad E = \begin{pmatrix} -1 & 0 & 0 \\ 1 & 2 & 0 \\ 1 & 1 & -1 \end{pmatrix}, \quad F = \begin{pmatrix} 1 & 3 & 1 \\ -1 & 1 & -3 \\ 1 & 1 & 2 \end{pmatrix}$$
+$$
+D = \begin{pmatrix} -1 & 2 & 1 \\ 1 & 0 & 1 \\ 0 & 1 & 2 \end{pmatrix}, \quad E = \begin{pmatrix} -1 & 0 & 0 \\ 1 & 2 & 0 \\ 1 & 1 & -1 \end{pmatrix}, \quad F = \begin{pmatrix} 1 & 3 & 1 \\ -1 & 1 & -3 \\ 1 & 1 & 2 \end{pmatrix}
+$$
 
 **a)** Determine, de ser posible, su inversa utilizando la definición. En caso de no ser posible justifique por qué no es posible.
 
 **b)** Ídem al inciso anterior pero utilizando la matriz aumentada $(A \mid I)$ reducida por filas.
 
 `solución:`
+
 $$
 \begin{matrix}
 A \cdot A^{-1}=I \Rightarrow \begin{pmatrix}
@@ -397,6 +434,7 @@ b+3d=1
 \end{pmatrix}
 \end{matrix}
 $$
+
 $$
 \begin{matrix}
 (A|I)= \left( \begin{array}{cc|cc}
@@ -421,6 +459,7 @@ F_{1}=F_{1}-F_{2} \left( \begin{array}{cc|cc}
 \end{pmatrix}
 \end{matrix}
 $$
+
 1
 ---
 
@@ -428,7 +467,9 @@ $$
 
 Dadas las siguientes matrices con parámetro $k$:
 
-$$A = \begin{pmatrix} k & 2 \\ 2 & k \end{pmatrix}, \quad B = \begin{pmatrix} 1 & k+1 \\ 2 & 2k+2 \end{pmatrix}, \quad C = \begin{pmatrix} k & 1 & 1 \\ 1 & k & 1 \\ 0 & 1 & k-1 \end{pmatrix}$$
+$$
+A = \begin{pmatrix} k & 2 \\ 2 & k \end{pmatrix}, \quad B = \begin{pmatrix} 1 & k+1 \\ 2 & 2k+2 \end{pmatrix}, \quad C = \begin{pmatrix} k & 1 & 1 \\ 1 & k & 1 \\ 0 & 1 & k-1 \end{pmatrix}
+$$
 
 **a)** Determine, si existen, valores de $k$ tal que la matriz sea invertible. En caso afirmativo encuentre su inversa en función del parámetro $k$.
 
@@ -442,7 +483,9 @@ $$A = \begin{pmatrix} k & 2 \\ 2 & k \end{pmatrix}, \quad B = \begin{pmatrix} 1 
 
 **b)** Para cada uno de los sistemas de ecuaciones lineales dados:
 
-$$\begin{cases} x + y = 1 \\ -x + 2y = 1 \end{cases} \qquad \begin{cases} u + v + w = 1 \\ u + 2v + 3w = 0 \\ -u + v - 2w = -1 \end{cases} \qquad \begin{cases} x - y + 2z = 2 \\ 3x - 2y + z = 3 \\ 2x - y - z = 1 \end{cases}$$
+$$
+\begin{cases} x + y = 1 \\ -x + 2y = 1 \end{cases} \qquad \begin{cases} u + v + w = 1 \\ u + 2v + 3w = 0 \\ -u + v - 2w = -1 \end{cases} \qquad \begin{cases} x - y + 2z = 2 \\ 3x - 2y + z = 3 \\ 2x - y - z = 1 \end{cases}
+$$
 
 - **i)** Expréselos en forma matricial (de la forma $AX = B$).
 - **ii)** Aplique lo demostrado en a) para determinar si tienen o no solución única. En caso afirmativo determine la misma resolviendo el sistema matricialmente.
@@ -453,7 +496,9 @@ $$\begin{cases} x + y = 1 \\ -x + 2y = 1 \end{cases} \qquad \begin{cases} u + v 
 
 Una empresa de monitoreo ambiental cuenta con 5 sensores, cada uno representado por un vértice (nodo) $S_i$ en un grafo dirigido. Si existe una flecha (arista) de $S_i$ hacia $S_j$, es porque el sensor $S_i$ transmite directamente una alerta al sensor $S_j$. La red de comunicaciones observada incluye las siguientes relaciones:
 
-$$S_1 \rightarrow S_2, \quad S_1 \rightarrow S_3, \quad S_2 \rightarrow S_4, \quad S_3 \rightarrow S_5, \quad S_4 \rightarrow S_5$$
+$$
+S_1 \rightarrow S_2, \quad S_1 \rightarrow S_3, \quad S_2 \rightarrow S_4, \quad S_3 \rightarrow S_5, \quad S_4 \rightarrow S_5
+$$
 
 Considere las siguientes definiciones:
 - Una arista es una flecha entre dos sensores.
@@ -499,6 +544,7 @@ Decida, justificando su respuesta, la verdad o falsedad de las siguientes propos
 **a)** Si una matriz es escalar, entonces es diagonal.
 
 **no necesariamente se cumple esta deifinición, por ejemplo la siguiente matriz es escalar y no es diagonal:**
+
 $$
 \begin{pmatrix}
 2&4 \\
@@ -517,7 +563,10 @@ $$
 **c)** La suma de dos matrices inversibles es también una matriz inversible.
 
 **d)** Si $A, B, C \in \mathbb{R}^{n \times n}$ son inversibles y tales que $A$ conmuta con $B$ y con $C$, entonces:
-$$(ABC)^{-1} = A^{-1} B^{-1} C^{-1}$$
+
+$$
+(ABC)^{-1} = A^{-1} B^{-1} C^{-1}
+$$
 
 **e)** Si $A^2 + 3A = kI$ y $k \neq 0$, entonces $\frac{1}{k}(A + 3I) = A^{-1}$.
 

@@ -19,6 +19,7 @@ si prestamos atención a los coeficientes que acompañan a la ecuación ( m y b)
 ---
 
 *b) Determine el valor de a para que la ecuación* $a(ax − 1) = 3(3x − 1)$ *tenga infinitas soluciones en* $\mathbb{R}$.
+
 $$
 \begin{matrix}
 a(ax-1)=3(3x-1) \\
@@ -30,13 +31,14 @@ a^2x-9x-a=-3 \\
 (9-9)x=0 \\
 0x=0 \\
 0=0 \\
-\therefore \text{para que la ecuación tenga $\infty$ soluciones a = 3}
+\therefore \text{para que la ecuación tenga \infty soluciones a = 3}
 \end{matrix}
 $$
 
 ---
 
 *c) Proporcione tres pares ordenados (x, y) que satisfagan la ecuación $−x+2y = 10.$ Justifique su elección.*
+
 $$
 \begin{matrix}
 -x+2y=10 \\
@@ -44,15 +46,16 @@ $$
 y= \dfrac{x+10}{2} \\
 \text{como es una ecuación lineal podemos elegir un x} \\
 \text{para que salga un y automaticamente} \\
-\text{si $x=0 \Rightarrow y=5$ entonces $-0+2(5)=10$} \\
-\text{si $x=2 \Rightarrow y=6$ entonces $-2+2(6)=10$} \\
-\text{si $x=-4 \Rightarrow y=3$ entonces $4+2(3)=10$}
+\text{si x=0 \Rightarrow y=5 entonces $-0+2(5)=10$} \\
+\text{si x=2 \Rightarrow y=6 entonces $-2+2(6)=10$} \\
+\text{si x=-4 \Rightarrow y=3 entonces $4+2(3)=10$}
 \end{matrix}
 $$
 
 ---
 
 *d) Calcule el valor de c para que el punto $(−2, 3)$ sea solución de la ecuación $2x + y − c = 0$.*
+
 $$
 \begin{matrix}
 2x+y-c=0 \\
@@ -65,7 +68,7 @@ y=-2x+c \\
 y=-2x-1 \\
 \text{evaluamos el par ordenado:} \\
 3=-2(-2)-1 \equiv 3=3 \\
-\therefore \text{cuando $c = -1$ el par ordenado es solución de $2x+y-c=0$}
+\therefore \text{cuando c = -1 el par ordenado es solución de $2x+y-c=0$}
 \end{matrix}
 $$
 
@@ -75,12 +78,14 @@ $$
 **a) Determine la solución analíticamente (utilizando el método algebraico de su elección).
 b) Clasifique el sistema según su tipo de solución (compatible determinado, compatible indeterminado o incompatible).
 c) Verifique gráficamente la clasificación obtenida, representando las rectas en el plano cartesiano.** 
+
 $$
 a)\begin{cases}
 x+y=1 \\
 x+2y=6
 \end{cases}
 $$
+
 $$
 \begin{matrix}
 \text{por el metodo de sustitucion:} \\ \\
@@ -92,6 +97,7 @@ x=-4 \\
 cs=\{(-4,5)\} \\ 
 \end{matrix}
 $$
+
 ```obs-system
 x+y=1
 x+2y=6
@@ -105,6 +111,7 @@ b)\begin{cases}
 2x-y=-3
 \end{cases}
 $$
+
 $$
 \begin{matrix}
 \text{por el metodo de reducción:} \\
@@ -113,6 +120,7 @@ x=0 \Rightarrow y=3 \\
 cs\{(0,3)\}
 \end{matrix}
 $$
+
 ```obs-system
 4x+y=3
 2x-y=-3
@@ -135,6 +143,7 @@ $$
 \text{tiene infinitas soluciones}
 \end{matrix}
 $$
+
 ```obs-system
 x+y=2
 2x+2y=4
@@ -148,6 +157,7 @@ x+3y-6=0 \\
 -2x+4y+2=0
 \end{cases}
 $$
+
 $$
 \begin{matrix}
 2(x+3y-6=0)+(-2x+4y+2=0)= \\
@@ -156,6 +166,7 @@ $$
 cs= \{(3,1)\}
 \end{matrix}
 $$
+
 ```obs-system
 x+3y=6
 4y-2x=-2
@@ -169,6 +180,7 @@ e) \begin{cases}
 -4x+6y=3
 \end{cases}
 $$
+
 $$
 \begin{matrix}
 2(2x-3y=2)+(-4x+6y=3)=  \\
@@ -177,6 +189,7 @@ $$
 \text{sin solución}
 \end{matrix}
 $$
+
 ```obs-system
 2x-3y=2
 -4x+6y=3
@@ -194,6 +207,7 @@ $$
 	**existen 3 operaciones que me permiten conseguir sistemas de ecuaciones equivalentes partiendo de un sistema, estas operaciones se denominan operaciones elementales:**
 
 1. operación elemental 1: se pueden intercambiar dos ecuaciones (filas entre si) 
+
 $$
 i)\begin{cases}
 x+y=1 \\
@@ -208,6 +222,7 @@ $$
 ---
 
 2. operación elemental 2: se puede multiplicar una ecuación (fila) por un escalar no nulo
+
 $$
 iv) \begin{cases}
 x+3y-6=0 \\
@@ -221,6 +236,7 @@ $$
 ---
 
 3. operación elemental 3: Sumar una ecuación (fila) el múltiplo escalar de otra ecuación (fila),donde el escalar es no nulo. Esta es la definición del método de reducción.
+
 $$
 v) \begin{cases}
 2x-3y=2 \\
@@ -230,12 +246,14 @@ v) \begin{cases}
 0=\dfrac{3}{2}
 \end{cases}
 $$
+
 `gracias a estas operaciones elementales y sistemas equivalentes podemos simplificar el sistema hasta que la solucion sea obvia o facil de lograr.`
 
 ---
 
 *Ejercicio 4:*
 **Resuelva los siguientes sistemas de ecuaciones y determine el conjunto solución para cada uno. Incluya todos los pasos del procedimiento.**
+
 $$
 i)\begin{cases}
    x + y + z - t = 1 \\
@@ -261,6 +279,7 @@ x+y+z-t=1 \\
 z+2t=0
 \end{cases}
 $$
+
 `observación:`
 	redujimos el sistema usando operaciones elementales, si observamos el resultado tenemos que la primera ecuación tiene 4 incógnitas (x, y, z, t), la segunda ecuación tiene 3 incógnitas por que redujimos "x" y la 3ra ecuación tiene 2 incógnitas por que redujimos "x" e "y", entonces se puede observar como si fueran escaleras por lo que definimos al sistema final como: "sistema de ecuaciones escalonado".
 
@@ -281,6 +300,7 @@ $\therefore \text{el sistema del inciso i) tiene inifinitas soluciones, pues el 
 	un sistema de ecuación lineal se puede escribir como una matriz de números reales, donde los números de esta matriz van a ser los coeficientes  de las ecuaciones del sistema, es decir si la ecuación es: $3x+5y$ en una fila de la matriz va a estar: (3  5), esta matriz se denomina: Matriz asociada al sistema.
 
 Ejemplo:
+
 $$
 \begin{cases}
 4x+5y=0 \\
@@ -292,8 +312,10 @@ $$
 -2 & -1
 \end{pmatrix}
 $$
+
 `definición:`
 	se pueden agregar los resultados de la ecuaciones también, esta matriz se denomina matriz ampliada del sistema:
+
 $$
 \begin{cases}
 4x+5y=0 \\
@@ -307,6 +329,7 @@ $$
 \end{array}
 \right)
 $$
+
 `observación:`
 	todas las operaciones elementales entre ecuaciones se pueden aplicar a las matrices en sus filas.
 
@@ -662,6 +685,7 @@ $$
 	si al escalonar un sistema homogéneo no se anula ninguna fila-ecuación entonces el sistema tiene una única solución y de echo es trivial pues se sabe que es 0, en caso de que se anule alguna fila-ecuación entonces el sistema tiene infinitas soluciones.
 
 *resuelva los siguientes sistemas homogéneos:*
+
 $$
 \begin{matrix}
 i) \begin{cases}
@@ -737,6 +761,7 @@ $$
 **a) Determine los valores de los parámetros para que el sistema: 
 	i) Tenga solución única     ii) Tenga infinitas soluciones     iii) No tenga solución 
 b) Justifique algebraicamente cada caso analizado.**
+
 $$
 \begin{matrix}
 i) \begin{cases}
@@ -770,14 +795,14 @@ x+y+z=-1 \\
 1. ~~~ -6k+12 \neq 0 \\
 -6k \neq -12  \\
 k \neq 2  \\
-\therefore \text{cuando $k \neq 2$ el sistema tiene solución única.} \\
+\therefore \text{cuando k \neq 2 el sistema tiene solución única.} \\
 2. ~~~ -6k+12=0 ~~\land ~~ 22-6k=0 \\
 -6k=-22 \\
 k=\dfrac{11}{3} \\
 \therefore \text{no existen valores de k que sastifagan ambas ecuaciones.} \\
 3. ~~~ -6k+12 = 0 ~~\land ~~ 22-6k \neq 0 \\
 \text{ya lo habiamos analizado pues 2 hacec 0 la primera ecuación} \\
-\text{y solo $\dfrac{11}{3}$ hace 0 a la segunda ecuación} \\
+\text{y solo \dfrac{11}{3} hace 0 a la segunda ecuación} \\
 \therefore k=2
 \end{matrix}
 $$

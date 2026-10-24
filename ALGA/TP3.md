@@ -71,6 +71,7 @@ Decide, justificando tu respuesta, en cada uno de los siguientes casos, si el co
 | $\mathbb{V} = \{A \in \mathbb{R}^{n\times n} \mid A = -A^{T}\}$                                | La usual en $\mathbb{R}^{n\times n}$  | El usual en $\mathbb{R}^{n\times n}$ |
 
 **Solución:**
+
 $$
 \begin{matrix}
 i)~~~ \forall u,v \in \mathbb{R} \Rightarrow u+v \in \mathbb{V} \\ \\
@@ -81,9 +82,10 @@ u+v\Rightarrow x_{1}-2y_{1}+x_{2}-2y_{2}=2 \\
 \Rightarrow (x_{1}-x_{2})+(2y_{1}-2y_{2})=2 \\
 si~x_{3}=(x_{1}-x_{2})~~\land~~y_{3}=2(y_{1}-y_{2}) \\
 x_{3}+2y_{3}=2 \\ \\
-\therefore \text{no es un espacio vectorial pues la suma no es cerrada en $\mathbb{V}.$}
+\therefore \text{no es un espacio vectorial pues la suma no es cerrada en \mathbb{V}.}
 \end{matrix}
 $$
+
 $$
 \begin{matrix}
 ii)1)~~~\forall u,v \in \mathbb{V} \Rightarrow u+v \in \mathbb{V} \\ \\
@@ -112,6 +114,7 @@ x_{1}-2y_{1}+x_{2}-2y_{2}=x_{2}-2y_{2}+x_{1}-2y_{1}  \\
 
 \end{matrix}
 $$
+
 ---
 
 ### Ejercicio 2
@@ -153,6 +156,7 @@ Calcula:
 - **v)** $3r + s - t$
 
 **Solución:**
+
 $$
 \begin{matrix}
 i)~~~2u-v= (1,3)-(2,4)& \text{por hipotesis} \\
@@ -170,6 +174,7 @@ v)~~~3r+s-t = (3,6,9)+(-1,1,-1)-(0,3,2) & \text{por hipotesis} \\
 ()
 \end{matrix}
 $$
+
 *Interpreta geométricamente cuando se trate de vectores de $\mathbb{R}^{2}$.*
 
 ![[Pasted image 20260829013845.png]]
@@ -184,6 +189,7 @@ Dados los vectores $r$, $s$ y $t$ del ejercicio anterior:
 - **d)** Justifique conceptualmente si $v_{1} = (1,8,7)$ y $v_{2} = (1,4,6)$ son combinaciones lineales de $r$, $s$ y $t$.
 
 **soluciones:**
+
 $$
 \begin{matrix}
 \text{sea } \vec{x} = \alpha_{1}v_{1}+\alpha_{2}v_{2}+\dots+\alpha_{n}v_{n} \\
@@ -216,7 +222,7 @@ $$
 \text{la condición para que el sistem tenga solución es:} \\ \\
 5x+2y-3z=0 \\ \\
 \therefore \text{ para que el sistema tenga solución lo cual me indica que existen los escalares} \\
-\text{y por ende el vector $\vec{x}$ es combinación lineal de r,s y t es todo aquel vector de $\mathbb{R}^3$} \\
+\text{y por ende el vector \vec{x} es combinación lineal de r,s y t es todo aquel vector de $\mathbb{R}^3$} \\
 \text{que cumple con la condicón o dicho en simbolos:} \\
 \forall \vec{x} \in \mathbb{R}^3 : 5x+2y-3z=0 \\ \\
 \text{una solución particular: } (1,2,3) \\ \\ \\
@@ -244,9 +250,10 @@ si~~\vec{0} \text{ es combinacion lineal de r,s y t entonces:} \\ \\
 \alpha_{1}-\alpha_{2}=0 \\
 3\alpha_{2}+3\alpha_{3}=0 
 \end{cases} \\ \\
-\therefore \text{podemos ver que el vector: $\vec{0}$ es combinación lineal de r,s y t para cualquier escalar de $\mathbb{R}^3$}
+\therefore \text{podemos ver que el vector: \vec{0} es combinación lineal de r,s y t para cualquier escalar de $\mathbb{R}^3$}
 \end{matrix}
 $$
+
 ---
 ### Ejercicio 7
 En cada caso, decide, justificando tu respuesta:
@@ -262,6 +269,7 @@ En cada caso, decide, justificando tu respuesta:
 - **ii)** $u = \begin{pmatrix} 1 & 2 \\ -1 & 0 \end{pmatrix}$, $v = \begin{pmatrix} 2 & 1 \\ -1 & 4 \end{pmatrix}$, $w = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ y $t = \begin{pmatrix} 0 & -1 \\ 2 & -1 \end{pmatrix}$
 
 **Solución:**
+
 $$
 \begin{matrix}
 b)i)~~~ (1,k,k-1)=\alpha_{1} u+ \alpha_{2}v+\alpha_{3}w \\
@@ -293,11 +301,13 @@ b)i)~~~ (1,k,k-1)=\alpha_{1} u+ \alpha_{2}v+\alpha_{3}w \\
 consultar!!!!!
 \end{matrix}
 $$
+
 ---
 
 ### Ejercicio 8
 En cada caso determina $\mathcal{L}(\mathbb{G})$. Interpreta geométricamente los casos de $\mathbb{R}^{2}$:
 - **a)** $\mathbb{G} = \{(1,3)\}$
+
 $$
 \begin{matrix}
 \vec{x}=\alpha(1,3) \\
@@ -319,7 +329,9 @@ $$
 gen\{(1,3)\}=\{\forall (x,y) \in \mathbb{R}^2 : -3x+y=0\}
 \end{matrix}
 $$
+
 - **b)** $\mathbb{G} = \{(1,3), (2,4)\}$
+
 $$
 \begin{matrix}
 \vec{x}=\alpha_{1}(1,3)+\alpha_{2}(2,4) \\
@@ -342,7 +354,9 @@ $$
 \therefore \text{como no es necesario aplicar ninguna condición podemos afirmar que todo } \mathbb{R}^2 \text{ genera el subespacio} 
 \end{matrix}
 $$
+
 - **c)** $\mathbb{G} = \{(-1,1,-1), (0,3,2)\}$
+
 $$
 \begin{matrix}
 \vec{x}=\alpha_{1}(-1,1,-1)+\alpha_{2}(0,3,2) \\
@@ -374,7 +388,9 @@ $$
 \therefore gen\{(-1,1,-1),(0,3,2)\}=\{\forall (x,y,z) \in \mathbb{R}^3:x+2y-3z=0\}
 \end{matrix}
 $$
+
 - **d)** $\mathbb{G} = \left\{ \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \begin{pmatrix} -1 & 0 \\ 0 & 2 \end{pmatrix} \right\}$
+
 $$
 \begin{matrix}
 \vec{x}= \alpha_{1} \begin{pmatrix}
@@ -422,13 +438,16 @@ Para los subespacios del Ejercicio 3, encuentra un conjunto generador. ¿Es úni
 ### Ejercicio 10
 Decide, justificando tu respuesta, si los siguientes conjuntos dados son linealmente independientes o dependientes:
 - **i)** $\mathbb{S} = \{(1,-1)\}$
+
 $$
 \begin{matrix}
-\text{al ser $\mathbb{S}$ un conjunto unitario cuyo unico elemento es distinto del vector nulo} \\
-\text{podemos afirmar por teorema que el conjunto $\mathbb{S}$ es linealmente independiente.}
+\text{al ser \mathbb{S} un conjunto unitario cuyo unico elemento es distinto del vector nulo} \\
+\text{podemos afirmar por teorema que el conjunto \mathbb{S} es linealmente independiente.}
 \end{matrix}
 $$
+
 - **ii)** $\mathbb{S} = \{(1,-1), (-1,1), (2,2)\}$
+
 $$
 \begin{matrix}
 \text{usando la definicion de dependencia lineal puedo expresar} \\
@@ -437,12 +456,15 @@ $$
 \therefore \text{el conjunto es linealmente dependiente.}
 \end{matrix}
 $$
+
 - **iii)** $\mathbb{S} = \{(0,0,0), (1,-1,1), (1,1,0)\}$
+
 $$
-\text{el comjunto $\mathbb{S}$ contiene al vector nulo y sabemos por teorema que es linealmente dependiente.}
+\text{el comjunto \mathbb{S} contiene al vector nulo y sabemos por teorema que es linealmente dependiente.}
 $$
 
 - **iv)** $\mathbb{S} = \{(1,1,2), (1,-1,1), (1,1,0)\}$
+
 $$
 \begin{matrix}
 \alpha_{1}(1,1,2)+\alpha_{2}(1,-1,1)+\alpha_{3}(1,1,0)=(0,0,0) \\
@@ -477,6 +499,7 @@ $$
 $$
 
 - **v)** $\mathbb{S} = \left\{ \begin{pmatrix} 1 & 0 \\ -1 & -1 \end{pmatrix}, \begin{pmatrix} 1 & 0 \\ 1 & 2 \end{pmatrix}, \begin{pmatrix} -1 & 1 \\ 0 & 2 \end{pmatrix} \right\}$
+
 $$
 \begin{matrix}
 \alpha_{1} \begin{pmatrix}
@@ -547,6 +570,7 @@ $$
 $$
 
 - **vi)** $\mathbb{S} = \{x^{2} + 2x - 1,\; x - 1,\; 2x^{2} - x + 2\}$
+
 $$
 consultar!!!!!
 $$
@@ -559,6 +583,7 @@ Dado el conjunto $\mathbb{S} = \{(1,1,1), (0,1,1+k), (0,1,k^{2}+2k+1)\}$, determ
 - **ii)** Linealmente dependiente
 
 **Solución:**
+
 $$
 \begin{matrix}
 \alpha_{1}(1,1,1)+\alpha_{2}(0,1,1+k)+\alpha_{3}(0,1,k^2+2k+1)=(0,0,0) \\
@@ -571,34 +596,35 @@ $$
 \end{cases} \sim \begin{pmatrix}
 1&0&0 \\
 1&1&1 \\
-1&1+k&k²+2k+1
+1&1+k&k^2+2k+1
 \end{pmatrix} \\ \\
 \begin{pmatrix}
 1&0&0 \\
 1&1&1 \\
-1&1+k&k²+2k+1
+1&1+k&k^2+2k+1
 \end{pmatrix} \sim \begin{pmatrix}
 1&0&0 \\
 0&1&1 \\
-0&1+k&k²+2k+1
+0&1+k&k^2+2k+1
 \end{pmatrix} \sim \begin{pmatrix}
 1&0&0 \\
 0&1&1 \\
-0&0&k²+k
+0&0&k^2+k
 \end{pmatrix} \sim \begin{cases}
 \alpha_{1}=0 \\
 \alpha_{2}+\alpha_{3}=0 \\
-\alpha_{3}(k²+k)=0
+\alpha_{3}(k^2+k)=0
 \end{cases}\\ \\
 \text{vemos en el sistema escalonado que la ultima ecuacion depende de k para ambos casos} \\
-\text{si }k²+k=0 \text{ tenemos los valores que anulan al }\alpha_{3} \text{ por lo que quedaria un sistema con } \\
+\text{si }k^2+k=0 \text{ tenemos los valores que anulan al }\alpha_{3} \text{ por lo que quedaria un sistema con } \\
 \text{2 ecuaciones y 3 incognitas lo que significa que tiene infinitas soluciones y entonces} \\
 \text{el sistema seria linealmente dependiente por teorema, para eso :} \\ \\
-k²+k=0 \Rightarrow k(k+1)=0 \Rightarrow k=0 ~~\lor  ~~ k=-1 \\
+k^2+k=0 \Rightarrow k(k+1)=0 \Rightarrow k=0 ~~\lor  ~~ k=-1 \\
  \\
-\therefore \text{si $k=0 ~~ \lor~~ k=-1$ el sistema es LD y si es distinto a esos valores es LI.}
+\therefore \text{si k=0 ~~ \lor~~ k=-1 el sistema es LD y si es distinto a esos valores es LI.}
 \end{matrix}
 $$
+
 ---
 
 ### Ejercicio 12
@@ -648,6 +674,7 @@ $$
 \text{lo que significa que el conjunto }\mathbb{B} \text{ es linealmente independiente.} 
 \end{matrix}
 $$
+
 $$
 \begin{matrix}
 \gamma_{1}(u+v)+\gamma_{2}(2ku-v)+\gamma_{3}(v+kw) = \odot\\
@@ -676,6 +703,7 @@ k \gamma_{3}=0
 \text{incognitas lo que por teorema me indica que el sistema tiene infinitas soluciones es decir es LD.}
 \end{matrix}
 $$
+
 ---
 
 ### Ejercicio 13

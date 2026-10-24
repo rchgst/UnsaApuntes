@@ -3,7 +3,6 @@
   "obsidian-git",
   "pdf-plus",
   "obsidian-latex-suite",
-  "better-export-pdf",
   "tasknotes",
   "obsidian-completr",
   "google-drive-sync",
@@ -11,5 +10,6 @@
   "export-to-html",
   "obsidian-excalidraw-plugin",
   "excalidraw-extras",
-  "calculator-pro"
+  "calculator-pro",
+  "better-export-pdf"
 ]
